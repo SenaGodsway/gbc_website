@@ -13,3 +13,8 @@ body {
     font-family: 'Nunito';
     font-family: 'DM Sans';
 }
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}

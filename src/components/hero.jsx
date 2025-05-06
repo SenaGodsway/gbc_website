@@ -2,6 +2,7 @@ import  { useState, useEffect } from 'react';
 import eightImage from '../assets/eight.jpg';
 import fiveImage from '../assets/nine.jpg';
 import oneImage from '../assets/ten.jpg';
+import Navbar from './Navbar';
 
 
 
@@ -39,30 +40,30 @@ const ImageCarousel = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto w-full h-full overflow-hidden">
-      {/* Image */}
+    <div className="relative w-full h-[100vh] overflow-hidden">
       <div className="w-full h-full overflow-hidden">
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
           className="w-full h-full object-cover"
         />
+          
       </div>
+      <div className="top-0 absolute flex flex-col justify-between bg-black bg-opacity-50 w-full h-full">
+        <Navbar/>
+            <div className="flex flex-col justify-around p-3 align-center">
+               <div className="p-6 w-full md:w-8/12 text-white">
+              <h1 className="mb-6 font-bold text-3xl">Welcome to Our Community of Faith</h1>
+             <p className="w-3/4 text-lg">Join us as we worship, grow, and serve together in Christ. We&apos;re excited to welcome you into a community where God&apos;s love shines</p>
+          </div>
+         <div className='mt-12'></div>
 
+         </div>
+      </div>
    
-
-      {/* Dots for navigation */}
-      {/* <div className="bottom-2 left-1/2 absolute flex space-x-2 transform -translate-x-1/2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToImage(index)}
-            className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
-          ></button>
-        ))}
-      </div> */}
     </div>
   );
 };
 
 export default ImageCarousel;
+

@@ -1,46 +1,41 @@
-
 import eight from '../assets/eight.jpg'
 import nine from '../assets/nine.jpg'
 import ten from '../assets/ten.jpg'
 import Footer from "../components/Footer";
 import { RoundButton } from "../components/reuseables/button";
-import { FaArrowRightLong,} from "react-icons/fa6";
-
 import { Link } from "react-router-dom";
-import ScrollGallery from "../components/scroll";
+// import ScrollGallery from "../components/scroll";
 import HeroSection from "../components/hero";
-import Navbar from "../components/Navbar";
+import NewMinistries from './new_ministries';
 
 
 const LandingPage = () => {
   return (
     <>
-    <Navbar/>
-    <div className="relative flex h-[85vh] md:h-[80vh]">
-      <div className="md:relative right-0 absolute bg-black bg-opacity-10 md:bg-opacity-100 w-full md:w-5/12">
-          <div className="mx-auto mt-[35%] p-6 w-full md:w-11/12 text-white">
-            <h1 className="mb-6 font-bold text-3xl">Welcome to Our Community of Faith</h1>
-            <p className="w-3/4 text-lg">Join us as we worship, grow, and serve together in Christ. We&apos;re excited to welcome you into a community where God&apos;s love shines</p>
-          </div>
-      </div>
-      <div className="-z-10 w-full md:w-7/12">
+    <div className="relative h-[85vh] md:h-[100vh] overflow-hidden">
         <HeroSection/>
-      </div>
     </div>
-  
-    <section className="flex md:flex-row flex-col py-12 h-[90vh]">
-        <div className="px-6 md:px-16 py-6 md:py-14 w-full md:w-2/4 lg:w-2/4">
-        <h2 className="mt-11 mb-3 font-bold text-[2rem] text-2xl">The Church</h2>
-        <p className="mt-6 text-gray-700 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum consequuntur cupiditate eum aut nostrum quia, animi architecto. Distinctio veniam ipsam libero quam ipsa accusamus sint nostrum asperiores a itaque.</p>
-        <div className="mt-6"></div>
-        <RoundButton href='/about_us'>
-            <p>Read More</p>
-            <span><FaArrowRightLong/></span>
-        </RoundButton>
+
+    <section className="flex flex-col justify-start items-start bg-gray-50 px-12 py-24 w-full">
+    <div className='mt-24'></div>
+       <div className='w-6/12'>
+       <h1 className='text-xl'> We believe in the core principles of the bible ipsum dolor sit amet consectetur adipisicing  tempora nulla accusantium quod. Voluptates nemo tenetur sint maiores sunt facere unde nostrum ex eum deleniti dignissimos aut, quod minima totam.</h1>
+       </div>
+    <div className="flex justify-start items-start gap-12 md:p-12 w-full h-full">
+              <div className='bg-white p-6 rounded-2xl text-black'>
+                <h3>Togetherness</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, repudiandae voluptatum ut neque numquam eius necessitatibus temporibus architecto dolor quaerat.</p>
+              </div>
+              <div className='bg-white p-6 rounded-2xl text-black'>
+                <h3>Friendliness</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, repudiandae voluptatum ut neque numquam eius necessitatibus temporibus architecto dolor quaerat.</p>
+              </div>
+              <div className='bg-white p-6 rounded-2xl text-black'>
+                <h3>Spirituality</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, repudiandae voluptatum ut neque numquam eius necessitatibus temporibus architecto dolor quaerat.</p>
+              </div>
         </div>
-        <div className="p-6 md:p-12 w-full md:w-2/4 h-full">
-        {/* <ImageCarousel images={images} speed={20} />         */}
-        </div>
+      
     </section>
     
     <div className="flex md:flex-row flex-col justify-between gap-10 bg-blue-950 px-6 py-24">
@@ -74,10 +69,14 @@ const LandingPage = () => {
         </span>
       </div>
     </div>
-    <div className="mt-6 py-12">
+
+    <div>
+      <NewMinistries/>
+    </div>
+    {/* <div className="mt-6 py-12">
       <h1 className="font-bold text-2xl text-center">Our Ministries and Groups</h1>
     <ScrollGallery/>
-    </div>
+    </div> */}
 
     <div className="bg-blue-950 py-32 text-white">
         <div className="text-center">
