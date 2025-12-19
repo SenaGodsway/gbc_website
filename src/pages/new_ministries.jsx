@@ -24,10 +24,10 @@ const NewMinistries = () => {
       const staticRect = staticElement.getBoundingClientRect();
 
       // When container enters viewport but hasn't completely scrolled past
-      if (containerRect.top <= 50 && containerRect.bottom >= window.innerHeight) {
+      if (containerRect.top <= 100 && containerRect.bottom >= window.innerHeight) {
         // Make static content stick to its original position visually
         staticElement.style.position = 'sticky';
-        staticElement.style.top = '20px';
+        staticElement.style.top = '50px';
         staticElement.style.alignSelf = 'flex-start';
       } else {
         // Reset when out of view
