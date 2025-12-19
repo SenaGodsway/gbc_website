@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 const Sermons = () => {
   return (
     <>
-    <div className="bg-slate-900 text-black">
+    <div className="bg-blue-800 text-black">
         <Navbar/>
     </div>
     <div className="mt-24 text-center">

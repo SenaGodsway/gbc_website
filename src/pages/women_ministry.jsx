@@ -25,7 +25,7 @@ const WomenMinistry = () => {
             <p className="w-full text-gray-700 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem obcaecati, sed dignissimos in reprehenderit, harum dolores quisquam magni nemo sunt praesentium iste omnis alias ratione nostrum quod laudantium. Tenetur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nulla et earum quisquam ex laborum beatae, rem sequi at quia? Sit odit quidem dicta voluptatem repellat amet quibusdam sunt eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati tenetur vitae consequuntur hic odio eius corporis ratione autem necessitatibus maiores, praesentium, voluptatibus inventore fuga perferendis, facilis veniam officia voluptas voluptatum.</p>
           </div>
-          <ScrollGallery/>
+         
       </div>
       <Footer/>
     </>

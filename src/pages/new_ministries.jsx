@@ -44,7 +44,7 @@ const NewMinistries = () => {
   const Ministry = ({ title, description, ministryUrl, ministryImage }) => {
     return (
       <div 
-        className="group relative flex-1 shadow-md p-5 rounded-2xl min-w-[250px] overflow-hidden"
+        className="group relative flex-1 shadow-md p-5 rounded-2xl md:min-w-[250px] min-w-11/12 sm:min-w-11/12 overflow-hidden"
         style={{
           backgroundImage: `url(${ministryImage})`,
           backgroundSize: 'cover',
@@ -53,7 +53,7 @@ const NewMinistries = () => {
         }}
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-30 transition-all duration-300"></div>
         
         {/* Content */}
         <div className="z-10 relative flex items-end h-full text-white">
@@ -74,12 +74,12 @@ const NewMinistries = () => {
   return (
     <div 
       ref={containerRef}
-      className="relative flex gap-12 mx-auto mt-24 p-12 w-full"
+      className="relative flex flex-col md:flex-row gap-12 mx-auto mt-24 p-6 md:p-12 w-full"
     >
       <div 
         ref={staticRef}
         id="static" 
-        className="w-3/12 transition-all duration-300"
+        className="w-full md:w-3/12 transition-all duration-300"
       >
         <h1 className="mb-2 font-bold text-gray-900 text-3xl">Our Ministries</h1>
         <p className="mb-8 text-gray-600 leading-relaxed">
@@ -88,7 +88,7 @@ const NewMinistries = () => {
       </div>
       <div 
         ref={gridRef}
-        className="gap-10 grid grid-cols-2 mb-10 w-8/12"
+        className="gap-10 grid md:grid-cols-2 grid-cols-1 mb-10 md:w-8/12 w-full bg-white"
       >
         <Ministry
           title="Men Ministry"

@@ -40,7 +40,7 @@ const ImageCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden">
       <div className="w-full h-full overflow-hidden">
         <img
           src={images[currentIndex].src}
@@ -49,7 +49,7 @@ const ImageCarousel = () => {
         />
           
       </div>
-      <div className="top-0 absolute flex flex-col justify-between bg-black bg-opacity-50 w-full h-full">
+      <div className="top-0 absolute flex flex-col justify-between bg-black bg-opacity-10 w-full h-full">
         <Navbar/>
             <div className="flex flex-col justify-around p-3 align-center">
                <div className="p-6 w-full md:w-8/12 text-white">

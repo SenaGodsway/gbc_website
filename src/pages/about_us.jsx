@@ -18,10 +18,12 @@ const AboutUs = () => {
   // ];
   return (
     <>
+    <div className="bg-blue-800">
         <Navbar/>
+        </div>
     <section className="bg-[url('./assets/three.jpg')] bg-cover bg-center h-[80vh]" >
-          <div className="bg-[rgba(2,2,255,.4)] h-full">
-            <div className="mx-auto p-6 w-[90%] text-white">
+          <div className="bg-[rgba(2,2,255,.2)] h-full relative">
+            <div className="mx-auto p-6 w-[90%] absolute bottom-8 text-white">
                  <h1 className='font-bold text-3xl'>Our Story</h1>
                  <p className='w-4/5 text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam nobis sit, voluptates corporis corrupti cupiditate?</p>
             </div>

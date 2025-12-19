@@ -6,7 +6,9 @@ import { CiMoneyBill } from "react-icons/ci"
 const Give = () => {
   return (
     <>
+    <div className="bg-blue-800">
       <Navbar/> 
+      </div>
       <div className="bg-[url('./assets/four.jpg')] bg-cover bg-center h-[80vh]">
           <div className="bg-[rgba(20,20,200,.2)] h-full">
             <div className="mx-auto w-[90%] text-center text-white">

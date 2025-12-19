@@ -10,7 +10,9 @@ import { RoundButton } from "../components/reuseables/button"
 const Contact = () => {
   return (
     <>
+    <div className="bg-blue-800">
             <Navbar/>
+            </div>
         <div className="p-12 text-center">
             <h1>Contact Us</h1>
         </div>
