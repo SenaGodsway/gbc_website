@@ -8,13 +8,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="z-50 flex justify-between bg-white px-12 py-6 border-b w-full text-slate-900 transition-all duration-300">
+      <nav className="z-50 flex justify-between px-12 py-6 w-full text-white transition-all duration-300">
         <div className="font-bold text-xl">
           <Link to="/">Grace Baptist Church</Link>
         </div>
         
    
-        <div className="md:flex lg:flex gap-6 hidden">
+        <div className="hidden md:flex lg:flex gap-6">
           <Link to="/about_us">About Us</Link>
           <span
             className="cursor-pointer"
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <button
-          className="block md:hidden text-lg"
+          className="md:hidden block text-lg"
           onClick={() => setShowMenu(!showMenu)} // Toggle mobile menu visibility
         >
           <BiMenu />
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {showMenu && (
-          <div className="top-16 right-0 z-50 absolute md:hidden bg-red-700 p-6 w-full h-[90vh] text-black">
+          <div className="md:hidden top-16 right-0 z-50 absolute bg-red-700 p-6 w-full h-[90vh] text-black">
             <Link to="/about_us" className="block py-2">About Us</Link>
             <span
               className="block py-2 cursor-pointer"

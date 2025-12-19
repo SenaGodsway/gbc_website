@@ -10,7 +10,7 @@ import six from '../assets/six.jpg'
 const Events = () => {
   return (
     <>
-    <div className="bg-slate-900 text-black">
+    <div className="bg-blue-800 ">
         <Navbar/>
     </div>
     <div className="mt-24 text-center">

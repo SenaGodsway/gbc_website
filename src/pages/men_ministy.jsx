@@ -24,7 +24,6 @@ const MenMinisty = () => {
             <p className="w-full text-gray-700 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem obcaecati, sed dignissimos in reprehenderit, harum dolores quisquam magni nemo sunt praesentium iste omnis alias ratione nostrum quod laudantium. Tenetur!</p>
           </div>
       </div>
-          <ScrollGallery/>
       <Footer/>
     </>
   )
